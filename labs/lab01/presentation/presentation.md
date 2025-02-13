@@ -2,7 +2,7 @@
 ## Front matter
 lang: ru-RU
 title: Лабораторная работа №1
-subtitle: Администрирование локальных систем 
+subtitle: Администрирование локальных сетей 
 author:
   - Мишина А. А.
 date: 12 февраля 2025
@@ -24,6 +24,22 @@ header-includes:
 
  - '\makeatother'
 ---
+
+## Докладчик
+
+:::::::::::::: {.columns align=center}
+::: {.column width="70%"}
+
+  * Мишина Анастасия Алексеевна
+  * НПИбд-02-22
+  * <https://github.com/nasmi32>
+
+:::
+::: {.column width="30%"}
+
+
+:::
+::::::::::::::
 
 ## Цели и задачи
 
