@@ -426,7 +426,7 @@ IP-адресов и портов подключения оборудовани�
 сопутствующими таблицами VLAN, IP-адресов и портов подключения
 оборудования.</p></li>
 <li><p>При выполнении работы необходимо учитывать соглашение об
-именовании</p></li>
+именовании.</p></li>
 </ol>
 </section>
 <section>
@@ -447,49 +447,49 @@ IP-адресов и портов подключения оборудовани�
 <table>
 <caption>Таблица VLAN {#tbl:vlan}</caption>
 <thead>
-<tr class="header">
+<tr>
 <th>№ VLAN</th>
 <th>Имя VLAN</th>
 <th>Примечание</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1</td>
 <td>default</td>
 <td>Не используется</td>
 </tr>
-<tr class="even">
+<tr>
 <td>2</td>
 <td>management</td>
 <td>Для управления устройствами</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>3</td>
 <td>servers</td>
 <td>Для серверной фермы</td>
 </tr>
-<tr class="even">
+<tr>
 <td>4-100</td>
 <td></td>
 <td>Зарезервировано</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>101</td>
 <td>dk</td>
 <td>Дисплейные классы (ДК)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>102</td>
 <td>departamens</td>
 <td>Кафедры</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>103</td>
 <td>adm</td>
 <td>Администрация</td>
 </tr>
-<tr class="even">
+<tr>
 <td>104</td>
 <td>other</td>
 <td>Для других пользователей</td>
@@ -517,59 +517,59 @@ IP-адресов и портов подключения оборудовани�
 <table>
 <caption>Таблица IP. Сеть 10.128.0.0/16 {#tbl:ip}</caption>
 <thead>
-<tr class="header">
+<tr>
 <th>IP-адреса</th>
 <th>Примечание</th>
 <th>VLAN</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>10.128.0.0/16</td>
 <td>Вся сеть</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>10.128.0.0/24</td>
 <td>Серверная ферма</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>10.128.0.1</td>
 <td>Шлюз</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>10.128.0.2</td>
 <td>Web</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>10.128.0.3</td>
 <td>File</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>10.128.0.4</td>
 <td>Mail</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>10.128.0.5</td>
 <td>Dns</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>10.128.0.6-10.128.0.254</td>
 <td>Зарезервировано</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>10.128.1.0/24</td>
 <td>Управление</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr>
 <td>10.128.1.1</td>
 <td>Шлюз</td>
 <td></td>
@@ -589,7 +589,7 @@ IP-адресов и портов подключения оборудовани�
 <col style="width: 24%" />
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Устройство</th>
 <th>Порт</th>
 <th>Примечание</th>
@@ -598,35 +598,35 @@ IP-адресов и портов подключения оборудовани�
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>msk-donskaya-aamishina-gw-1</td>
 <td>f0/1</td>
 <td>UpLink</td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
 <td>f0/0</td>
 <td>msk-donskaya-aamishina-sw-1</td>
 <td></td>
 <td>2, 3, 101, 102, 103, 104</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>msk-donskaya-aamishina-sw-1</td>
 <td>f0/24</td>
 <td>msk-donskaya-aamishina-gw-1</td>
 <td></td>
 <td>2, 3, 101, 102, 103, 104</td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
 <td>g0/1</td>
 <td>msk-donskaya-aamishina-sw-2</td>
 <td></td>
 <td>2, 3</td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
 <td>g0/2</td>
 <td>msk-donskaya-aamishina-sw-4</td>
@@ -642,37 +642,37 @@ IP-адресов и портов подключения оборудовани�
 <caption>Регламент выделения ip-адресов (для сети класса С)
 {#tbl:reglament}</caption>
 <thead>
-<tr class="header">
+<tr>
 <th>IP-адреса</th>
 <th>Назначение</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1</td>
 <td>Шлюз</td>
 </tr>
-<tr class="even">
+<tr>
 <td>2-19</td>
 <td>Сетевое оборудование</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>20-29</td>
 <td>Серверы</td>
 </tr>
-<tr class="even">
+<tr>
 <td>30-199</td>
 <td>Компьютеры, DHCP</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>200-219</td>
 <td>Компьютеры, Static</td>
 </tr>
-<tr class="even">
+<tr>
 <td>220-229</td>
 <td>Принтеры</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>230-254</td>
 <td>Резерв</td>
 </tr>
@@ -700,59 +700,59 @@ IP-адресов и портов подключения оборудовани�
 <table>
 <caption>Таблица IP. Сеть 172.16.0.0/12 {#tbl:ip2}</caption>
 <thead>
-<tr class="header">
+<tr>
 <th>IP-адреса</th>
 <th>Примечание</th>
 <th>VLAN</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>172.16.0.0/12</td>
 <td>Вся сеть</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>172.16.0.0/24</td>
 <td>Серверная ферма</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>172.16.0.1</td>
 <td>Шлюз</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>172.16.0.2</td>
 <td>Web</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>172.16.0.3</td>
 <td>File</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>172.16.0.4</td>
 <td>Mail</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>172.16.0.5</td>
 <td>Dns</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>172.16.0.6-172.16.0.254</td>
 <td>Зарезервировано</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>172.16.1.0/24</td>
 <td>Управление</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr>
 <td>172.16.1.1</td>
 <td>Шлюз</td>
 <td></td>
@@ -765,59 +765,59 @@ IP-адресов и портов подключения оборудовани�
 <table>
 <caption>Таблица IP. Сеть 192.168.0.0/16 {#tbl:ip3}</caption>
 <thead>
-<tr class="header">
+<tr>
 <th>IP-адреса</th>
 <th>Примечание</th>
 <th>VLAN</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>192.168.0.0/16</td>
 <td>Вся сеть</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>192.168.0.0/24</td>
 <td>Серверная ферма</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>192.168.0.1</td>
 <td>Шлюз</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>192.168.0.2</td>
 <td>Web</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>192.168.0.3</td>
 <td>File</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>192.168.0.4</td>
 <td>Mail</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>192.168.0.5</td>
 <td>Dns</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>192.168.0.6-192.168.0.254</td>
 <td>Зарезервировано</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>192.168.1.0/24</td>
 <td>Управление</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr>
 <td>192.168.1.1</td>
 <td>Шлюз</td>
 <td></td>
