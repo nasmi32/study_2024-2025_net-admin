@@ -254,14 +254,19 @@ def emptyNet():
     router = net.addHost('router', ip='10.0.1.1/24')
 
     info('*** Creating links\n')
-    #Настройка соединений infName2 - имя интерфейса на маршрутизаторе, params2 - настройка ip-адреса для интерфейса маршрутизатор, bw - пропускная способность 100 Мбит/с, delay - искусственная задержка 10 мс
-    net.addLink(h1, router, intfName2='router-eth1', params2={'ip': '10.0.1.1/24'}, bw=100, delay='10ms')
-    net.addLink(h2, router, intfName2='router-eth2', params2={'ip': '10.0.2.1/24'}, bw=100, delay='10ms')
+    #Настройка соединений infName2 - имя интерфейса на маршрутизаторе,
+    #params2 - настройка ip-адреса для интерфейса маршрутизатор,
+    #bw - пропускная способность 100 Мбит/с, delay - искусственная задержка 10 мс
+    net.addLink(h1, router, intfName2='router-eth1',
+    params2={'ip': '10.0.1.1/24'}, bw=100, delay='10ms')
+    net.addLink(h2, router, intfName2='router-eth2',
+    params2={'ip': '10.0.2.1/24'}, bw=100, delay='10ms')
 
     info('*** Starting network\n')
     net.start()
 
-    #Включает IP-форвардинг на маршрутизаторе, позволяя ему пересылать пакеты между подсетями
+    #Включает IP-форвардинг на маршрутизаторе,
+    #позволяя ему пересылать пакеты между подсетями
     router.cmd('sysctl net.ipv4.ip_forward=1')
 
     info('*** Starting iperf3 server on h2\n')

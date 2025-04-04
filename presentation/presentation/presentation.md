@@ -84,9 +84,7 @@ header-includes:
 
 ## Работа с Mininet из-под Windows
 
-```bash
-choco install vcxsrv
-```
+- `choco install vcxsrv`
 
 :::::::::::::: {.columns align=center}
 ::: {.column width="50%"}
